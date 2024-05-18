@@ -1,4 +1,4 @@
-const { User, Thought, Reaction } = require('../models');
+const { User, Thought } = require('../models');
 
 module.exports = {
     async getThoughts(req, res) {
@@ -76,7 +76,6 @@ module.exports = {
                 return res.status(404).json({ message: 'No thought found with that ID!' });
             }
 
-            //await Reaction.deleteMany({ _id: { $in: thought.reactions } });
             res.status(200).json({ message: 'Thought successfully deleted!' });
         } catch (err) {
             console.log(err);
