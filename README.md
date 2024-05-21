@@ -134,6 +134,8 @@ These images show the before and after of a user's thoughts when deleting an ass
 
 ![image showing get user by id route in Insomnia after deleting thought](https://github.com/KitKatBar/social-network-api-challenge/blob/main/images/get-user-by-id-thoughts-reactions-delete.png?raw=true)
 
+### Bonus Images - Delete User & All Associated Thoughts
+
 These images show the before and after of all users and all thoughts when deleting a user that has a thought.  It will also collapse all associated thoughts and the logic must be implemented in the back-end since thoughts is also a model.
 
 ![image showing get all users route in Insomnia](https://github.com/KitKatBar/social-network-api-challenge/blob/main/images/get-all-users-before.png?raw=true)
