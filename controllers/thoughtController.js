@@ -1,6 +1,8 @@
+// Import our models
 const { User, Thought } = require('../models');
 
 module.exports = {
+    // Get all thoughts
     async getThoughts(req, res) {
         try {
             const thoughts = await Thought.find();
@@ -12,6 +14,7 @@ module.exports = {
         }
     },
 
+    // Get a thought
     async getThought(req, res) {
         try {
             const thought = await Thought.findOne({ _id: req.params.thoughtId })
@@ -28,6 +31,7 @@ module.exports = {
         }
     },
 
+    // Create a thought
     async createThought(req, res) {
         try {
             const thought = await Thought.create(req.body);
@@ -43,6 +47,7 @@ module.exports = {
         }
     },
 
+    // Update a thought
     async updateThought(req, res) {
         try {
             const thought = await Thought.findOneAndUpdate(
@@ -62,6 +67,7 @@ module.exports = {
         }
     },
 
+    // Delete a thought
     async deleteThought(req, res) {
         try {
             const user = await User.findOneAndUpdate(
@@ -83,6 +89,7 @@ module.exports = {
         }
     },
 
+    // Add a reaction to a thought
     async addReaction(req, res) {
         try {
             const thought = await Thought.findOneAndUpdate(
@@ -102,6 +109,7 @@ module.exports = {
         }
     },
 
+    // Delete a reaction from a thought
     async deleteReaction(req, res) {
         try {
             const thought = await Thought.findOneAndUpdate(

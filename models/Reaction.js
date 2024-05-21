@@ -1,6 +1,7 @@
 const { Schema, Types } = require('mongoose');
 const { dateFormatter } = require('../utils/dateFormat');
 
+// Schema to create a Reaction
 const reactionSchema = new Schema(
     {
         reactionId: {
@@ -30,4 +31,5 @@ const reactionSchema = new Schema(
     }
 );
 
+// Reaction is a Schema only
 module.exports = reactionSchema;
