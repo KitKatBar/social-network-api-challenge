@@ -1,4 +1,4 @@
-# Social Network API Challenge - Definitely Not Reddit!
+# Social Network API Challenge - No Friends No Life
   
 ## Description
 
